@@ -53,9 +53,6 @@ pub const SERVER_PROCESS_ENV_VARS: &[&str] = &[
     "IGGY_DISPLAY_CONFIG",
     "IGGY_ROOT_USERNAME",
     "IGGY_ROOT_PASSWORD",
-    "IGGY_TEST_VERBOSE",
-    "IGGY_TEST_CLUSTER_NODES",
-    "IGGY_TEST_CLEANUP_DISABLED",
     "IGGY_SHARD_RUNTIME_CAPACITY",
     "IGGY_SHARD_EVENT_INTERVAL",
     "IGGY_CI_BUILD",
@@ -65,7 +62,7 @@ pub const SERVER_PROCESS_ENV_VARS: &[&str] = &[
 ];
 
 pub(crate) const SERVER_ALLOWED_ENV_PREFIXES: &[&str] =
-    &["IGGY_CONNECTORS_", "IGGY_KAFKA_", "IGGY_MCP_"];
+    &["IGGY_CONNECTORS_", "IGGY_KAFKA_", "IGGY_MCP_", "IGGY_TEST_"];
 
 const DEFAULT_CONFIG_PATH: &str = "core/server/config.toml";
 

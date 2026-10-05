@@ -24,7 +24,7 @@ use std::collections::HashMap;
 /// `IGGY_`-prefixed variables the server reads outside the config struct, so
 /// `ServerConfig::all_env_var_names` cannot know them. `IGGY_CONFIG_PATH`
 /// selects the config file itself and the root credentials are consumed by
-/// `args.rs` before the config loads; `IGGY_TEST_VERBOSE` is harness-only.
+/// `args.rs` before the config loads.
 pub const NON_CONFIG_ENV_VARS: &[&str] = configs::server::SERVER_PROCESS_ENV_VARS;
 
 /// Resolve config paths to environment variable names.
