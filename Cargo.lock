@@ -7091,6 +7091,7 @@ dependencies = [
  "bytes",
  "enumset",
  "secrecy",
+ "serde",
  "thiserror 2.0.20",
  "twox-hash",
 ]
